@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SocialPoint Game Name Generator</title>    
+        <link href='http://fonts.googleapis.com/css?family=Skranji|Chango|Kavoon|Sansita+One|Erica+One|Shojumaru|Boogaloo' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="normalize.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="main.css" type="text/css" media="all" />
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+ 	<body>
+
+ 		<div id="body">
+ 			<header>
+	 			<h1>SocialPoint Game Name Generator</h1>
+	 		</header>
+	 		<div id="placeholder"></div>
+	 		<button id="generate">Generate Again!</button>
+	 		<footer>
+	 			by <a href="http://twitter.com/miguel_ibero">Miguel Ibero</a> 2013. See on <a href="http://github.com/miguelibero/sp-name-generator">github</a>.
+	 		</footer>
+	 	</div>
+
+ 		<script src="underscore.js" type="text/javascript"></script>
+ 		<script src="sp-name-generator.js" type="text/javascript"></script>
+ 		<script>
+ 			window.onload = function () {
+ 				var generate = function() {
+    				var name = SocialPointNameGenerator.generateHtml();
+    				document.getElementById("placeholder").innerHTML = name;
+  				};
+				document.getElementById("generate").onclick = generate;
+				generate();
+			};
+ 		</script>
+ 	</body>
+</html>

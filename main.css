@@ -1,0 +1,37 @@
+#body {
+	width: 800px;
+	margin: 10px auto;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+header {
+	border-bottom: 1px solid #CCC;
+	margin: 10px;
+	padding: 10px;
+}
+
+footer {
+	border-top: 1px solid #CCC;
+	margin: 10px;
+	padding: 10px;	
+	font-size: 10px;
+	color: #999;
+	text-align: center;
+}
+
+#placeholder {
+	text-align: center;
+	font-size: 300%;
+	width: 500px;
+	margin: 10px auto;
+}
+
+#generate {
+	display: block;
+	margin: 10px auto;
+	font-size: 400%;
+}
