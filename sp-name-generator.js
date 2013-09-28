@@ -4,7 +4,7 @@ var SocialPointNameGenerator = (function () {
   var settings = {
     adjectives: ['dark', 'monster', 'dragon', 'social', 'legendary'],
     oldAdjectives: ['super', 'crazy', 'jumping'],
-    nouns: ['monsters', 'dragons','warriors', 'legends', 'city'],
+    nouns: ['monsters', 'dragons','warriors', 'legends', 'city', 'kingdoms' ],
     oldNouns: ['dog', 'park', 'alien'],
     structures: [
       '%noun%',
@@ -18,6 +18,7 @@ var SocialPointNameGenerator = (function () {
       'League of %structure%',
       '%structure% Saga',
       '%structure% Wars',
+      '%structure% Legacy',
       '%structure% Empires'
     ],
     oldUniqueStructures: [
@@ -137,6 +138,7 @@ var SocialPointNameGenerator = (function () {
       strokeColor = randomColor(textColor);
     }
     css["-webkit-text-stroke"] = ""+strokeWidth+"px " + strokeColor;
+    css["-moz-text-stroke"] = css["-webkit-text-stroke"];
     if (Math.random() < settings.shadowChance) {
       var shadowOffset = Math.round(Math.random()*settings.shadowMaxOffset);
       var shadowBlur = Math.round(Math.random()*settings.shadowMaxBlur);
